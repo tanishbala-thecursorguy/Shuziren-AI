@@ -203,23 +203,21 @@ export function ConversionBoostingPage({ language = 'de' }: { language?: 'en' | 
           </motion.button>
         </div>
 
-        {/* Scroll Down Indicator */}
+        {/* Scroll Down Indicator - Mouse Symbol */}
         <motion.div
-          className="absolute bottom-10 left-1/2 transform -translate-x-1/2 flex flex-col items-center gap-3 cursor-pointer"
+          className="absolute bottom-8 left-1/2 transform -translate-x-1/2 flex flex-col items-center gap-2"
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
-          transition={{ duration: 1, delay: 1 }}
-          onClick={() => window.scrollTo({ top: window.innerHeight, behavior: 'smooth' })}
+          transition={{ duration: 1, delay: 1.5 }}
         >
-          <span className="text-gray-400 text-sm uppercase tracking-wider">Scroll Down</span>
           <motion.div
-            className="w-8 h-12 border-2 border-gray-400 rounded-full flex justify-center pt-2"
-            animate={{ y: [0, 10, 0] }}
-            transition={{ duration: 1.5, repeat: Infinity, ease: "easeInOut" }}
+            className="w-7 h-11 border-2 border-gray-500 rounded-full flex justify-center pt-2"
+            animate={{ opacity: [0.5, 1, 0.5] }}
+            transition={{ duration: 2, repeat: Infinity, ease: "easeInOut" }}
           >
             <motion.div
-              className="w-1.5 h-3 bg-gray-400 rounded-full"
-              animate={{ y: [0, 8, 0] }}
+              className="w-1 h-2.5 bg-gray-500 rounded-full"
+              animate={{ y: [0, 6, 0] }}
               transition={{ duration: 1.5, repeat: Infinity, ease: "easeInOut" }}
             />
           </motion.div>
