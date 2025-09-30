@@ -523,7 +523,7 @@ export default function App() {
       </nav>
 
       {/* Hero Section */}
-      <section className="min-h-screen flex items-center justify-center px-6 relative">
+      <section className="min-h-screen flex items-center justify-center px-6 pt-24 relative">
         <div className="max-w-7xl mx-auto text-center">
           <motion.h1 
             className="text-white mb-8 text-7xl md:text-8xl lg:text-9xl min-h-[120px] md:min-h-[160px]"

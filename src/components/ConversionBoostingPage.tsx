@@ -170,8 +170,8 @@ export function ConversionBoostingPage({ language = 'de' }: { language?: 'en' | 
   return (
     <div className="min-h-screen bg-black text-white">
       {/* Hero Section */}
-      <section className="min-h-screen flex items-center justify-center px-6 relative">
-        <div className="max-w-7xl mx-auto">
+      <section className="min-h-screen flex items-center justify-center px-6 pt-24 relative">
+      <div className="max-w-7xl mx-auto">
           <motion.div
             initial={{ opacity: 0, y: 30 }}
             animate={{ opacity: 1, y: 0 }}
@@ -201,7 +201,7 @@ export function ConversionBoostingPage({ language = 'de' }: { language?: 'en' | 
           >
               {t.hero.cta}
           </motion.button>
-        </div>
+          </div>
 
         {/* Scroll Down Indicator - Mouse Symbol */}
         <motion.div

@@ -93,7 +93,7 @@ export function AutomationsPage({ language = 'en' }: { language?: 'en' | 'de' })
   return (
     <div className="min-h-screen bg-black text-white">
       {/* Hero Section with Typing Effect */}
-      <section className="min-h-screen flex items-center justify-center px-6 relative">
+      <section className="min-h-screen flex items-center justify-center px-6 pt-24 relative">
         <div className="max-w-4xl mx-auto text-center">
           <motion.div
             initial={{ opacity: 0, y: 30 }}
